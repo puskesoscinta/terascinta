@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth scroll-pt-20">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puskesos CINTA (Citamiang Kita)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); /* Dark blue gradient */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-3">
+                        <div>
+                            <span class="font-bold text-xl text-slate-900 block leading-tight">TERAS CINTA</span>
+                            
+                            <span class="font-medium text-sm text-green-600 block leading-tight">Tempat Respon & <br> Administrasi Sosial Citamiang Kita</span> <!-- Green text -->
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-slate-600 hover:text-orange-500 font-medium transition-colors">Beranda</a>
+                    <a href="#informasi-desil" class="text-slate-600 hover:text-orange-500 font-medium transition-colors">Informasi Desil</a>
+                    <a href="#cara-ubah-desil" class="text-slate-600 hover:text-orange-500 font-medium transition-colors">Cara Ubah Desil</a>
+                    <a href="#kontak" class="bg-orange-500 text-white px-5 py-2.5 rounded-full font-medium hover:bg-orange-600 transition-colors shadow-sm">Hubungi Kami</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Buka Menu Navigasi" class="text-slate-600 hover:text-orange-500 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg rounded-b-xl">
+                <a href="#beranda" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-orange-500 hover:bg-orange-50 rounded-md">Beranda</a>
+                <a href="#informasi-desil" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-orange-500 hover:bg-orange-50 rounded-md">Informasi Desil</a>
+                <a href="#cara-ubah-desil" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-orange-500 hover:bg-orange-50 rounded-md">Cara Ubah Desil</a>
+                <a href="#kontak" class="block px-3 py-2 text-base font-medium text-orange-500 hover:bg-orange-50 rounded-md">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-bg pt-32 pb-20 lg:pt-40 lg:pb-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/10 pattern-dots"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto animate-fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+                    Pusat <br> Kesejahteraan <br> Sosial <br> (Citamiang Kita)
+                </h1>
+                <p class="text-lg md:text-xl text-black bg-white/80 inline-block px-6 py-4 rounded-xl font-semibold mb-10 leading-relaxed shadow-lg backdrop-blur-sm">
+                    Hadir untuk memberikan pelayanan pendampingan informasi sosial masyarakat dan kesejahteraan warga Kelurahan Citamiang, Kecamatan Citamiang, Kota Sukabumi.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#informasi-desil" class="bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Pelajari Tentang Desil
+                    </a>
+                    <a href="https://cekbansos.kemensos.go.id" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-none">
+                        Cek Bansos Sekarang <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-auto text-slate-50 fill-current">
+                <path d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="informasi-desil" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in opacity-0" id="anim-1">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Apa Itu Desil?</h2>
+                <div class="w-24 h-1 bg-green-500 mx-auto rounded-full"></div> <!-- Green accent -->
+            </div>
+
+            <div class="max-w-4xl mx-auto animate-fade-in delay-100 opacity-0" id="anim-2">
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    <strong class="text-slate-900">Desil</strong> merupakan pengelompokan keluarga berdasarkan tingkat kesejahteraan sosial dan ekonomi dalam Data Tunggal Sosial dan Ekonomi Nasional (DTSEN) atau Data Terpadu Kesejahteraan Sosial (DTKS).
+                </p>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    Pembagiannya terdiri dari 10 kelompok, mulai dari desil 1 hingga desil 10. Angka desil menunjukkan <strong>posisi relatif kesejahteraan keluarga</strong> dibandingkan kelompok keluarga lainnya. Semakin kecil angka desil, semakin rendah posisi kesejahteraan keluarga tersebut.
+                </p>
+                <div class="bg-blue-900/10 border-l-4 border-blue-900 p-6 rounded-r-lg"> <!-- Dark blue box -->
+                    <h4 class="font-bold text-blue-950 mb-2 flex items-center">
+                        <i class="fas fa-info-circle mr-2 text-blue-900"></i> Penting Diketahui
+                    </h4>
+                    <p class="text-blue-900">
+                        Berada pada desil 1-4 (rendah) membuat keluarga <strong>dapat diusulkan</strong> menerima bantuan seperti PKH atau Sembako. Namun, tidak otomatis menerima bantuan, karena tetap mempertimbangkan pemutakhiran data, verifikasi, dan kuota masing-masing program bansos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <h3 class="text-2xl font-bold text-center text-slate-900 mb-10">Arti Desil 1 sampai 10</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Desil 1-4 (Prioritas Bansos) -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-bl-lg">Prioritas Bantuan</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                            <span class="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+                            Desil 1
+                        </h4>
+                        <p class="text-slate-600">Kelompok 10% keluarga dengan tingkat kesejahteraan <strong>paling rendah</strong> (Sangat Miskin / Miskin Ekstrem).</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-bl-lg">Prioritas Bantuan</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                            <span class="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+                            Desil 2
+                        </h4>
+                        <p class="text-slate-600">Kelompok 10% keluarga di atas desil 1, dikategorikan sebagai kelompok <strong>Miskin</strong>.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-yellow-100 text-yellow-700 text-xs font-bold px-3 py-1 rounded-bl-lg">Berpeluang</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                            <span class="bg-yellow-100 text-yellow-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+                            Desil 3
+                        </h4>
+                        <p class="text-slate-600">Kelompok keluarga yang berada di ambang kemiskinan atau <strong>Hampir Miskin</strong>.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-yellow-100 text-yellow-700 text-xs font-bold px-3 py-1 rounded-bl-lg">Berpeluang</div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                            <span class="bg-yellow-50 text-yellow-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm border border-yellow-200">4</span>
+                            Desil 4
+                        </h4>
+                        <p class="text-slate-600">Kelompok <strong>Rentan Miskin</strong>. Memiliki kondisi ekonomi cukup, namun rentan terdampak krisis finansial.</p>
+                    </div>
+
+                    <!-- Desil 5-10 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                            <span class="bg-blue-100 text-blue-900 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">5</span>
+                            Desil 5
+                        </h4>
+                        <p class="text-slate-600">Kelompok yang berada di tengah pemeringkatan, transisi menuju kelas menengah (Pas-pasan). Biasanya diusulkan untuk PBI-JK (Kesehatan).</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                            <span class="bg-green-100 text-green-600 w-auto px-3 h-8 rounded-full flex items-center justify-center mr-3 text-sm">6 - 10</span>
+                            Desil 6-10
+                        </h4>
+                        <p class="text-slate-600">Kelompok masyarakat dengan tingkat kesejahteraan menengah hingga paling tinggi (Sejahtera). Bukan prioritas bansos rutin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cara-ubah-desil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in opacity-0" id="anim-3">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Bagaimana Cara "Menurunkan" Desil?</h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto rounded-full mb-6"></div> <!-- Orange accent -->
+                <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                    Perlu dipahami: Masyarakat <strong>tidak dapat memilih/meminta angka desil tertentu secara langsung</strong>. Desil adalah hasil perhitungan sistem BPS/Kemensos berdasarkan data riil kondisi keluarga. Jika desil Anda tinggi (misal: 10) padahal kondisi aslinya kurang mampu, yang Anda lakukan adalah <strong>Mengajukan Sanggah / Pemutakhiran Data</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in delay-100 opacity-0" id="anim-4">
+                <!-- Cara Online -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 relative shadow-sm hover:shadow-md transition-shadow">
+                    <div class="absolute -top-5 left-8 bg-green-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md"> <!-- Green badge -->
+                        Cara Online (Disarankan)
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 mt-4 flex items-center">
+                        <i class="fas fa-mobile-alt mr-3 text-green-500 text-2xl"></i> Lewat Aplikasi Cek Bansos
+                    </h3>
+                    <ol class="space-y-4 text-slate-700 list-decimal list-inside ml-2">
+                        <li class="pl-2">Unduh aplikasi <strong>Cek Bansos</strong> resmi Kemensos di Play Store/App Store.</li>
+                        <li class="pl-2">Buat akun baru menggunakan KTP & KK, lalu login.</li>
+                        <li class="pl-2">Pilih menu <strong>Usul / Sanggah</strong> atau fitur pembaruan data.</li>
+                        <li class="pl-2">Jelaskan kondisi sosial ekonomi yang <strong>sebenarnya saat ini</strong> (pekerjaan, aset, kondisi rumah, dll).</li>
+                        <li class="pl-2">Lengkapi data foto pendukung yang diminta sistem.</li>
+                        <li class="pl-2">Kirim pengajuan dan tunggu proses verifikasi.</li>
+                    </ol>
+                </div>
+
+                <!-- Cara Offline -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 relative shadow-sm hover:shadow-md transition-shadow">
+                    <div class="absolute -top-5 left-8 bg-blue-900 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md"> <!-- Dark blue badge -->
+                        Cara Offline
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 mt-4 flex items-center">
+                        <i class="fas fa-building mr-3 text-blue-900 text-2xl"></i> Melalui Puskesos / Kelurahan
+                    </h3>
+                    <ol class="space-y-4 text-slate-700 list-decimal list-inside ml-2">
+                        <li class="pl-2">Datang ke Sekretariat Puskesos CINTA / Kantor Kelurahan Citamiang.</li>
+                        <li class="pl-2">Bawa dokumen: KTP, KK, dan foto kondisi rumah (opsional).</li>
+                        <li class="pl-2">Sampaikan ke pengurus Puskesos atau operator desa ingin melakukan <strong>Pemutakhiran Data DTKS/DTSEN</strong>.</li>
+                        <li class="pl-2">Berikan informasi yang jujur mengenai kondisi ekonomi saat ini.</li>
+                        <li class="pl-2">Nantinya petugas (Operator SIKS-NG) akan menginput pembaruan data ke sistem Kemensos.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-yellow-50 border border-yellow-200 rounded-xl p-6 text-center animate-fade-in delay-200 opacity-0" id="anim-5">
+                <p class="text-yellow-800 font-medium">
+                    <i class="fas fa-exclamation-triangle mr-2"></i> <strong>Penting:</strong> Setelah mengajukan pembaruan, desil tidak langsung turun seketika. Data akan melalui proses verifikasi dan pemadanan sebelum BPS/Kemensos menghitung ulang posisi desil Anda.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-20 bg-blue-950 text-white"> <!-- Darkest blue background -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Butuh Bantuan Lebih Lanjut?</h2>
+            <p class="text-xl text-slate-300 mb-12">
+                Jangan ragu untuk mengecek status mandiri atau menghubungi admin Puskesos CINTA (Citamiang Kita) jika Anda memerlukan panduan terkait administrasi sosial.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <!-- Tombol Cek Bansos -->
+                <a href="https://cekbansos.kemensos.go.id" target="_blank" rel="noopener noreferrer" 
+                   class="w-full sm:w-auto bg-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition-colors shadow-lg flex items-center justify-center group">
+                    <i class="fas fa-search mr-3 text-xl group-hover:scale-110 transition-transform"></i>
+                    Cek Status Desil / Bansos
+                </a>
+                
+                <!-- Tombol WhatsApp Admin -->
+                <a href="https://wa.me/6285177441374?text=Halo%20Admin%20Puskesos%20CINTA%20Citamiang,%20saya%20warga%20kelurahan%20ingin%20bertanya..." target="_blank" rel="noopener noreferrer" 
+                   class="w-full sm:w-auto bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition-colors shadow-lg flex items-center justify-center group">
+                    <i class="fab fa-whatsapp mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+                    Hubungi Operator (0851-7744-1374)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div>
+                            <span class="font-bold text-lg text-white block leading-tight">Puskesos CINTA</span>
+                            <span class="text-sm text-green-500 block leading-tight">(Citamiang Kita)</span> <!-- Green text -->
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Pusat Kesejahteraan Sosial Kelurahan Citamiang, Kecamatan Citamiang, Kota Sukabumi. Melayani masyarakat dengan tulus.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beranda" class="hover:text-orange-400 transition-colors">Beranda</a></li>
+                        <li><a href="#informasi-desil" class="hover:text-orange-400 transition-colors">Informasi Desil Kemensos</a></li>
+                        <li><a href="#cara-ubah-desil" class="hover:text-orange-400 transition-colors">Cara Pemutakhiran Data</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-orange-500"></i>
+                            Kelurahan Citamiang, Kec. Citamiang, Kota Sukabumi
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-green-500 text-lg"></i>
+                            0851-7744-1374
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-8 text-sm text-center">
+                &copy; 2026 Puskesos CINTA (Citamiang Kita). All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    entry.target.classList.remove('opacity-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Elements to animate
+        const animElements = document.querySelectorAll('#anim-1, #anim-2, #anim-3, #anim-4, #anim-5');
+        animElements.forEach(el => {
+            if(el) observer.observe(el);
+        });
+    </script>
+</body>
+</html>
